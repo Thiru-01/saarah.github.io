@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root {
-    --yellow: #FFDE03;
+    --yellow: #6d23b6;
 }
 
 * {
@@ -13,6 +13,10 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
+}
+
+#active {
+    color: var(--yellow);
 }
 
 html {
@@ -58,7 +62,7 @@ header .navbar a {
     background-color: transparent;
     padding: 1rem;
     font-size: 1.2rem;
-    color: #111;
+    color: #333;
 }
 
 header .navbar a:hover {
@@ -257,7 +261,7 @@ section {
     border-radius: .5rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -285,8 +289,7 @@ section {
 .skill-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
-    padding: 2rem 0;
+    gap: 1rem;
 }
 
 .skill-box .skill-container {
@@ -294,7 +297,7 @@ section {
 }
 
 .bar {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .bar:first-child {
@@ -308,9 +311,9 @@ section {
 .bar .info span {
     font-weight: 500;
     color: #111;
-    font-size: 17px;
+    font-size: 1rem;
     opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
+    animation: showText 0.2s 1s linear forwards;
 }
 
 @keyframes showText {
@@ -327,7 +330,7 @@ section {
     transform: scaleX(0);
     transform-origin: left;
     border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 @keyframes animate {
@@ -343,7 +346,7 @@ section {
     transform: scaleX(0);
     transform-origin: left;
     background: var(--yellow);
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 0.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 .bar .progress-line.c span {
@@ -480,6 +483,10 @@ section {
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    justify-self: center;
+    width: 100%;
     padding: 2.5rem;
     font-size: 1rem;
     color: #666;
@@ -492,7 +499,10 @@ section {
 }
 
 .social {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    justify-self: center;
+    width: 100%;
     text-align: center;
     background: white;
 }
@@ -538,6 +548,12 @@ section {
         text-align: center;
         padding: 2rem;
         font-size: 3rem;
+    }
+    .bar .progress-line {
+        height: 5px;
+    }
+    .progress-line span::after {
+        font-size: 6px;
     }
 }
 

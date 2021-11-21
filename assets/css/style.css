@@ -533,11 +533,17 @@ section{
 
     header .navbar{
         writing-mode: horizontal-tb;
+        min-height: 100vh;
+        min-width: 100vh;
+        padding: 30rem;
     }
 
     header .navbar a{
+        padding: 2rem;
         display: block;
+        text-align: center;
         font-size: 3rem;
+        
     }
 
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <header> 
+    <header>
         <div id="menu-bars" class="fas fa-bars"></div>
         <nav class="navbar">
             <a href="index.html">Home</a>
@@ -20,64 +22,63 @@
             <a href=" contact.html">Contact</a>
         </nav>
     </header>
-    
+
     <div class="about">
         <h1 class="heading">My <span>Service</span></h1>
     </div>
-     
+
     <div class="service">
-    <div class="box-container">
-        <div class="box">
-            <i class="far fa-file-code font-awersome"></i>
-            <h3>Full Stack Developer</h3>
-            <p>i'm have some skills in a wide variety of coding, from databases to graphic design and UI/UX management. i can develope software with my own team</p>
+        <div class="box-container">
+            <div class="box">
+                <i class="far fa-file-code font-awersome"></i>
+                <h3>Full Stack Developer</h3>
+                <p>i'm have some skills in a wide variety of coding, from databases to graphic design and UI/UX management. i can develope software with my own team</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-android font-awersome"></i>
+                <h3>Android Developer (Flutter)</h3>
+                <p>I'm A Cross-Platform Developer. I Can Develop Apps For Both Android And Ios In Single Code, So That The Time Will Be Reduced. I'm A Flutter Dev and I Have A Huge Knowledge In It And I Have Experience In State Management Like (GETX, PROVIDER)
+                    And In Firebase Too</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-python font-awersome "></i>
+                <h3>python specialist</h3>
+                <p>I have done lots of projets in python, like in tkinter, web scrapping pyqt5 for UI development and so on. Huge knownledge in python and i have ability to create project at any time</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-robot font-awersome"></i>
+                <h3>AI Kid</h3>
+                <p>i'm a AI kid. I currently learing it, i had done some projects in this domain using CNN and i got good accurancy level. Now i'm focusing on the it to enlarge my knowledge in this domain</p>
+            </div>
         </div>
-        <div class="box">
-            <i class="fab fa-android font-awersome"></i>
-            <h3>Android Developer (Flutter)</h3>
-            <p>I'm A Cross-Platform Developer. I Can Develop Apps For Both Android And Ios In Single Code, So That The Time Will Be Reduced. I'm A Flutter Dev and I Have A Huge Knowledge In It And I Have Experience In State Management Like (GETX, PROVIDER) And In Firebase Too</p>
-        </div>
-        <div class="box">
-            <i class="fab fa-python font-awersome "></i>
-            <h3>python specialist</h3>
-            <p>I have done lots of projets in python, like in tkinter, web scrapping pyqt5 for UI development and so on. Huge knownledge in python and i have ability to create project at any time</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-robot font-awersome"></i>
-            <h3>AI Kid</h3>
-            <p>i'm a AI kid. I currently learing it, i had done some projects in this domain using CNN and i got good accurancy level. Now i'm focusing on the it to enlarge my knowledge in this domain</p>
-        </div>
+
     </div>
-    
-</div>
-    <div class="social" >
+    <div class="social">
         <a href="https://www.facebook.com/profile.php?id=100021949021392"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/mr_aegon_01/"><i class="fab fa-instagram-square"></i></a>
         <a href="https://github.com/Thiru-01"><i class="fab fa-github-square"></i></a>
         <a href="https://www.linkedin.com/in/thiru-candane-1067701b8/"><i class="fab fa-linkedin"></i></a>
-    
-    </div> 
- <script>
-      
-let menu = document.querySelector('#menu-bars');
-let header = document.querySelector('header');
 
-menu.onclick = () =>{
-    menu.classList.toggle('fa-times');
-    header.classList.toggle('active');
-}
+    </div>
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let header = document.querySelector('header');
 
-window.onscroll = () =>{
-    menu.classList.remove('fa-times');
-    header.classList.remove('active');
-};
-         var typed = new Typed(".typing-text", {
-             strings: ['full stack developer', 'App developer (Flutter)','AI kid' ] ,
-             loop : true,
-             typeSpeed:150
-         });
-         
-      
- </script>
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+        var typed = new Typed(".typing-text", {
+            strings: ['full stack developer', 'App developer (Flutter)', 'AI kid'],
+            loop: true,
+            typeSpeed: 150
+        });
+    </script>
 </body>
+
 </html>

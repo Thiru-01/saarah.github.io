@@ -542,6 +542,7 @@ section {
     header .navbar {
         min-height: 100vh;
         display: flex;
+        background:#fff;
         flex-direction: column;
         justify-content: center;
     }

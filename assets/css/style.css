@@ -22,7 +22,7 @@
 html {
     font-size: 62.5;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 html::-webkit-scrollbar {
@@ -490,7 +490,6 @@ section {
     padding: 2.5rem;
     font-size: 1rem;
     color: #666;
-    background: #fff;
     text-align: center;
 }
 
@@ -540,7 +539,9 @@ section {
     }
     header .navbar {
         min-height: 100vh;
+        min-width: 100%;
         display: flex;
+        background-color: #fff;
         flex-direction: column;
         justify-content: center;
     }

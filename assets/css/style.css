@@ -22,7 +22,7 @@
 html {
     font-size: 62.5;
     overflow-x: hidden;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -196,7 +196,7 @@ section {
     height: 28rem;
     width: 15rem;
     border-radius: .5rem;
-    border: .9rem solid#fff;
+    border: .9rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -431,7 +431,7 @@ section {
 .contact .row .image img {
     width: 100%;
     border-radius: .5rem;
-    border: .9rem solid#fff;
+    border: .9rem solid #fff;
     box-shadow: none;
 }
 
